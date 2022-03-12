@@ -13,8 +13,8 @@ import notification from './electron/notification';
 import proxy from './electron/proxy';
 
 const isDevelopment = process.env.NODE_ENV !== "production";
-const _defaultHeight = 620;
-const _defaultWidth = 820;
+const _defaultHeight = 600;
+const _defaultWidth = 800;
 
 // Scheme must be registered before the app is ready
 protocol.registerSchemesAsPrivileged([
@@ -42,7 +42,7 @@ async function createWindow() {
 
   // Create the browser window.
   win = new BrowserWindow({
-    title: 'YaRadio',
+    title: 'Boombox',
     x: lastWindowState ? lastWindowState.x : 100,
     y: lastWindowState ? lastWindowState.y : 100,
     height: lastWindowState ? lastWindowState.height : _defaultHeight,
