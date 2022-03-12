@@ -38,7 +38,7 @@
         </template>
         <v-card>
           <v-card-title>
-            <span class="headline">Settings</span>
+            <span class="headline">Настройки</span>
           </v-card-title>
           <v-divider></v-divider>
           <v-card-text style="height: 360px">
@@ -46,17 +46,17 @@
               <v-row>
                 <v-col cols="12" class="pb-0">
                   <div class="label-box label-box__without_btn ma-0">
-                    <h3>Notifications</h3>
+                    <h3>Уведомления</h3>
                   </div>
                   <v-checkbox
                     v-model="allowNotification"
-                    label="Enable"
+                    label="Включить"
                     class="pa-0 ma-2"
                   ></v-checkbox>
                 </v-col>
                 <v-col cols="12">
                   <div class="label-box">
-                    <h3>Proxy</h3>
+                    <h3>Прокси</h3>
                     <v-btn text right @click="clearProxy">
                       <v-icon>mdi-delete</v-icon>
                     </v-btn>
@@ -66,7 +66,7 @@
                       <v-select
                         v-model="protocol"
                         :items="itemsProtocol"
-                        label="Protocol"
+                        label="Протокол"
                         class="pt-2 pl-2"
                       ></v-select>
                     </v-col>
@@ -88,7 +88,7 @@
                     <v-row>
                       <v-checkbox
                         v-model="gsPlay"
-                        label="Play | Pause"
+                        label="Воспроизвести | Пауза"
                         class="pa-0 ml-2"
                         v-on:change="getAlert"
                       ></v-checkbox>
@@ -96,7 +96,7 @@
                     <v-row>
                       <v-checkbox
                         v-model="gsNextTrack"
-                        label="Next track"
+                        label="Следующий трек"
                         class="pa-0 ma-0 ml-2"
                         v-on:change="getAlert"
                       ></v-checkbox>
@@ -104,7 +104,7 @@
                     <v-row>
                       <v-checkbox
                         v-model="gsPrevTrack"
-                        label="Previous track"
+                        label="Предыдущий трек"
                         class="pa-0 ma-0 ml-2"
                         v-on:change="getAlert"
                       ></v-checkbox>
@@ -112,7 +112,7 @@
                     <v-row>
                       <v-checkbox
                         v-model="gsMute"
-                        label="Mute"
+                        label="Замутить"
                         class="pa-0 ma-0 ml-2"
                         v-on:change="getAlert"
                       ></v-checkbox>
@@ -120,7 +120,7 @@
                     <v-row>
                       <v-checkbox
                         v-model="gsExit"
-                        label="Exit"
+                        label="Выход"
                         class="pa-0 ma-0 ml-2"
                         v-on:change="getAlert"
                       ></v-checkbox>
@@ -130,14 +130,14 @@
               </v-row>
             </v-container>
             <small>
-              You can support me :)
+              themihaels любит овсяные печеньки
               <v-btn @click="externalSupport" text>
                 <v-icon medium>mdi-cash-usd</v-icon>
               </v-btn>
               <br />
-              Copyright 2019-2021 ©
+              Copyright 1861-2022 ©
               <a
-                href="https://github.com/dedpnd/yaradio-yamusic"
+                href="https://github.com/Se330us/yandex.boombox"
                 target="_blank"
                 >dedpnd</a
               >
@@ -145,8 +145,8 @@
           </v-card-text>
           <v-card-actions>
             <v-spacer></v-spacer>
-            <v-btn color="blue darken-1" text @click="close"> Close </v-btn>
-            <v-btn color="blue darken-1" text @click="save"> Save </v-btn>
+            <v-btn color="blue darken-1" text @click="close"> Закрыть </v-btn>
+            <v-btn color="blue darken-1" text @click="save"> Сохранить </v-btn>
           </v-card-actions>
         </v-card>
       </v-dialog>
@@ -158,13 +158,13 @@
     <v-alert
       v-model="alert"
       border="bottom"
-      close-text="Close Alert"
+      close-text="Закрыть предупреждение"
       color="deep-purple accent-4"
       dark
       dismissible
       style="position: absolute; bottom: 0px; left: 20%; right: 20%"
     >
-      It is recommended to restart the application for correct work
+      Рекомендуется перезапустить для именно нормальной работы
     </v-alert>
   </v-app>
 </template>
@@ -225,7 +225,7 @@ export default Vue.extend({
   },
   methods: {
     externalSupport() {
-      shell.openExternal("https://www.tinkoff.ru/sl/6XuoF9Bz5bk");
+      shell.openExternal("");
     },
     openHomePage() {
       const exec = async (args: string) => {

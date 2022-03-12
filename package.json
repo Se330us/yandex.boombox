@@ -1,8 +1,8 @@
 {
-    "name": "yaradio-yamusic",
-    "productName": "YaMusic.app",
-    "version": "1.0.4",
-    "description": "Yandex Radio and Yandex Music desktop application, two in one :)",
+    "name": "yandex.boombox",
+    "productName": "Boombox",
+    "version": "1.0",
+    "description": "Приложения Яндекс.Радио и Яндекс.Музыки",
     "main": "background.js",
     "scripts": {
         "serve": "vue-cli-service serve",
@@ -17,9 +17,9 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/dedpnd/yaradio-yamusic.git"
+        "url": "git+https://github.com/Se330us/yandex.boombox.git"
     },
-    "author": "dedpnd <dedpnd@example.com>",
+    "author": "themihaels <spudkomixail@yandex.ru>",
     "license": "MIT",
     "keyword": [
         "electron",
@@ -29,12 +29,14 @@
         "yamusic",
         "yaradio",
         "Яндекс Музыка",
-        "Яндекс Радио"
+        "Яндекс Радио",
+        "Boombox",
+        "Бумбокс"
     ],
     "bugs": {
-        "url": "https://github.com/dedpnd/yaradio-yamusic/issues"
+        "url": "https://github.com/Se330us/yandex.boombox/pulls"
     },
-    "homepage": "https://github.com/dedpnd/yaradio-yamusic#readme",
+    "homepage": "https://github.com/Se330us/yandex.boombox#readme",
     "dependencies": {
         "@mdi/font": "^3.6.95",
         "core-js": "^3.6.5",
